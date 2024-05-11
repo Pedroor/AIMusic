@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "AiMusic",
+    "slug": "AiMusic",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "package": "com.anonymous.AiMusic"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.AiMusic"
+    }
+  }
+}
