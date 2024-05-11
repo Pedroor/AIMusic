@@ -1,13 +1,22 @@
 {
-  "extends": "@tsconfig/react-native/tsconfig.json",
-  "compilerOptions": {
-    "allowJs": true,
-    "removeComments": true /* Do not emit comments to output. */,
-    "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
-    "moduleResolution": "node" /* Allow javascript files to be compiled. */,
-    "jsx": "react-native",
-    "strict": true,
-    "target": "ES6",
-    "allowJs": true
-  }
+	"extends": "expo/tsconfig.base",
+	"compilerOptions": {
+		"strict": true,
+		"target": "ES6",
+		"module": "commonjs",
+		"moduleResolution": "Node",
+		"jsx": "react-native",
+		"lib": ["dom", "esnext"],
+		"noEmit": true,
+		"allowSyntheticDefaultImports": true,
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"],
+			"@/assets/*": ["./assets/*"]
+		}
+	},
+	"include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"],
+	"exclude": ["node_modules"]
 }

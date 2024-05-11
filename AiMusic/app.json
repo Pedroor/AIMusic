@@ -1,16 +1,19 @@
 {
-  "expo": {
-    "name": "AiMusic",
-    "slug": "AiMusic",
-    "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "android": {
-      "package": "com.anonymous.AiMusic"
-    },
-    "ios": {
-      "bundleIdentifier": "com.anonymous.AiMusic"
-    }
-  }
+	"expo": {
+		"name": "AiMusic",
+		"slug": "AiMusic",
+		"version": "1.0.0",
+		"assetBundlePatterns": ["**/*"],
+		"android": {
+			"package": "com.anonymous.AiMusic"
+		},
+		"ios": {
+			"bundleIdentifier": "com.anonymous.AiMusic"
+		},
+		"plugins": ["expo-router"],
+		"experiments": {
+			"typedRoutes": true,
+			"tsconfigPaths": true
+		}
+	}
 }
